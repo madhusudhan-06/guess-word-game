@@ -1,0 +1,111 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+main{
+  max-width: 450px;
+}
+.header{
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: blanchedalmond;
+}
+.header h1{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.status{
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  color: blanchedalmond;
+  height: 80px;
+}
+.status.won{
+  background-color: rgb(47 154 47);
+}
+.status.lost{
+  background-color: rgb(189 41 41);
+}
+.status.messages{
+  font-style: italic;
+  background-color: #7A5EA7;
+  font-weight: 500;
+}
+.languages{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.languages span{
+  padding: 5px;
+  border-radius: 5px;
+}
+.word{
+  justify-content: center;
+  display: flex;
+  gap: 3px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.word span{
+  border-radius: 2px;
+  background-color: rgb(99 85 85);
+  color: beige;
+  font-size: 1rem;
+  padding: 5px;
+  border-bottom: solid 2px brown;
+  height: 25px;
+  width: 25px;
+}
+.sr-only{
+  display: none;
+}
+.keyboard{
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.keyboard button{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: yellow;
+  color: rgb(8, 39, 39);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.keyboard button:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.new-game {
+  text-align: center;
+}
+.new-game button{
+  border-radius: 3px;
+  background-color: rgb(50, 192, 154);
+  padding: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.new-game button:hover{
+  background-color: rgb(32, 156, 123);
+}
+button.key-red{
+  background-color: #d72424;
+}
+button.key-green{
+  background-color: #3ad03a;
+}
